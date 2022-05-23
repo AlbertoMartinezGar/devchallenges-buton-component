@@ -1,0 +1,29 @@
+.default-button{
+    background-color: #E0E0E0;
+
+    &:hover{
+        background-color: #AEAEAE;
+    }
+    &:focus{
+        background-color: #AEAEAE;
+    }
+}
+
+.outline-button{
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+
+    &:hover{
+        background-color: #AEAEAE;
+    }
+    &:focus{
+        background-color: #AEAEAE;
+    }
+}
+
+.text-button{
+    background-color: #fff;
+    border: none;
+}
+
+
