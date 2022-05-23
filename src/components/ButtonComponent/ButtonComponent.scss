@@ -1,5 +1,57 @@
-.default-button{
+$defaultColor: #E0E0E0;
+$defaultColorHover: #AEAEAE;
+$defaultColorHoverOutline: rgba(224, 224, 224, 0.3);
+
+$primaryColor: #2962FF;
+$primaryColorHover: #0039CB;
+$primaryColorHoverOutline: rgba(41, 98, 255, 0.1);
+
+$secondaryColor: #455A64;
+$secondaryColorHover: #1C313A;
+$secondaryColorHoverOutline: rgba(69, 90, 100, 0.1); 
+
+$dangerColor: #D32F2F;
+$dangerColorHover: #9A0007;
+$dangerColorHoverOutline: rgba(211, 47, 47, 0.1);
+
+.default{
     background-color: #E0E0E0;
+
+    &.primary{
+        color: white;
+        background-color: $primaryColor;
+
+        &:hover{
+            background-color: $primaryColorHover;
+        }
+        &:focus{
+            background-color: $primaryColorHover;
+        }
+    }
+
+    &.secondary{
+        color: white;
+        background-color: $secondaryColor;
+
+        &:hover{
+            background-color: $secondaryColorHover;
+        }
+        &:focus{
+            background-color: $secondaryColorHover;
+        }
+    }
+
+    &.danger{
+        color: white;
+        background-color: $dangerColor;
+    
+        &:hover{
+            background-color: $dangerColorHover;
+        }
+        &:focus{
+            background-color: $dangerColorHover;
+        }
+    }
 
     &:hover{
         background-color: #AEAEAE;
@@ -9,21 +61,112 @@
     }
 }
 
-.outline-button{
+.outline{
     background-color: #fff;
     border: 1px solid #E0E0E0;
 
+    &.primary {
+        color: $primaryColor;
+        border-color: $primaryColor;
+        
+        &:hover{
+            background-color: $primaryColorHoverOutline;
+        }
+        &:focus{
+            background-color: $primaryColorHoverOutline;
+        }
+
+    }
+
+    &.secondary {
+        color: $secondaryColor;
+        border-color: $secondaryColor;
+        
+        &:hover{
+            background-color: $secondaryColorHoverOutline;
+        }
+        &:focus{
+            background-color: $secondaryColorHoverOutline;
+        }
+
+    }
+
+    &.danger{
+        color: $dangerColor;
+        border-color: $dangerColor;
+    
+        &:hover{
+            background-color: $dangerColorHoverOutline;
+        }
+        &:focus{
+            background-color: $dangerColorHoverOutline;
+        }
+    }
+
     &:hover{
-        background-color: #AEAEAE;
+        background-color: $defaultColorHoverOutline;
     }
     &:focus{
-        background-color: #AEAEAE;
+        background-color: $defaultColorHoverOutline;
     }
 }
 
-.text-button{
+.text{
     background-color: #fff;
     border: none;
+
+    &.primary{
+        color: $primaryColor;
+
+        &:hover{
+            background-color: $primaryColorHoverOutline;
+        }
+        &:focus{
+            background-color: $primaryColorHoverOutline;
+        }
+    }
+
+    &.secondary{
+        color: $secondaryColor;
+
+        &:hover{
+            background-color: $secondaryColorHoverOutline;
+        }
+        &:focus{
+            background-color: $secondaryColorHoverOutline;
+        }
+    }
+
+    &.danger{
+        color: $dangerColor;
+
+        &:hover{
+            background-color: $dangerColorHoverOutline;
+        }
+        &:focus{
+            background-color: $dangerColorHoverOutline;
+        }
+    }
+
+    &:hover{
+        background-color: $defaultColorHoverOutline;
+    }
+    &:focus{
+        background-color: $defaultColorHoverOutline;
+    }
 }
 
+.sm{
+    width: 73px;
+    height: 32px;
+}
 
+.md{
+    width: 81px;
+    height: 36px;
+}
+
+.lg{
+    width: 93px;
+    height: 42px;
+}

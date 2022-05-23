@@ -9,23 +9,130 @@ function App() {
         <hr/>
         <div className='col-4 d-flex justify-content-center'>
           <ButtonComponent 
-            text={'Default button'} 
-            type={'default-button'} 
+            text={'Default'} 
+            type={'default'} 
           />
         </div>
         <div className='col-4 d-flex justify-content-center'>
           <ButtonComponent 
-            text={'Outline button'}
-            type={'outline-button'}
+            text={'Outline'}
+            type={'outline'}
           />
         </div>
         <div className='col-4 d-flex justify-content-center'>
           <ButtonComponent 
-            text={'Text button'} 
-            type={'text-button'}
+            text={'Text'} 
+            type={'text'}
           />
         </div>
       </div>
+
+      <div className='row mt-5'>
+        <h1>Colors</h1>
+        <hr/>
+          <div className='row mb-5'>
+            <h3 className='mb-4'>Primary</h3>
+            <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Default'} 
+                type={'default'} 
+                color={'primary'}
+              />
+            </div>
+            <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Outline'}
+                type={'outline'}
+                color={'primary'}
+              />
+            </div>
+            <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Text'} 
+                type={'text'}
+                color={'primary'}
+              />
+            </div>
+        </div>
+        <div className='row mb-5'>
+          <h3 className='mb-4'>Secondary</h3>
+          <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Default'} 
+                type={'default'} 
+                color={'secondary'}
+              />
+            </div>
+            <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Outline'}
+                type={'outline'}
+                color={'secondary'}
+              />
+            </div>
+            <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Text'} 
+                type={'text'}
+                color={'secondary'}
+              />
+            </div>
+        </div>
+        <div className='row'>
+          <h3>Danger</h3>
+          <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Default'} 
+                type={'default'} 
+                color={'danger'}
+              />
+            </div>
+            <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Outline'}
+                type={'outline'}
+                color={'danger'}
+              />
+            </div>
+            <div className='col-4 d-flex justify-content-center'>
+              <ButtonComponent 
+                text={'Text'} 
+                type={'text'}
+                color={'danger'}
+              />
+            </div>
+        </div>
+      </div>
+
+      <div className='row mt-5'>
+        <h1>Sizes</h1>
+        <hr />
+        <div className='col-4 d-flex justify-content-center'>
+          <ButtonComponent 
+            text={'sm'} 
+            type={'default'} 
+            color={'primary'}
+            size={'sm'}
+          />
+        </div>
+        <div className='col-4 d-flex justify-content-center'>
+          <ButtonComponent 
+            text={'md'}
+            type={'default'}
+            color={'primary'}
+            size={'md'}
+          />
+        </div>
+        <div className='col-4 d-flex justify-content-center'>
+          <ButtonComponent 
+            text={'lg'} 
+            type={'default'}
+            color={'primary'}
+            size={'lg'}
+          />
+        </div>
+      </div>
+
     </div>
     
   );
