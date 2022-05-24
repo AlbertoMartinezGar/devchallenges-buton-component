@@ -1,1 +1,6 @@
 export {default as ButtonComponent} from './ButtonComponent/ButtonComponent'
+export {default as DefaultSection} from './DefaultSection'
+export {default as ColorsSection} from './ColorsSection'
+export {default as SizesSection} from './SizesSection'
+export { default as IconsSection } from './IconsSection'
+export { default as EnabledSection } from './EnabledSection'

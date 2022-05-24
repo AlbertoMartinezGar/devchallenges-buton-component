@@ -4,15 +4,15 @@ $defaultColorHoverOutline: rgba(224, 224, 224, 0.3);
 
 $primaryColor: #2962FF;
 $primaryColorHover: #0039CB;
-$primaryColorHoverOutline: rgba(41, 98, 255, 0.1);
+$primaryColorHoverOutline: rgba(41, 98, 255, 0.3);
 
 $secondaryColor: #455A64;
 $secondaryColorHover: #1C313A;
-$secondaryColorHoverOutline: rgba(69, 90, 100, 0.1); 
+$secondaryColorHoverOutline: rgba(69, 90, 100, 0.3); 
 
 $dangerColor: #D32F2F;
 $dangerColorHover: #9A0007;
-$dangerColorHoverOutline: rgba(211, 47, 47, 0.1);
+$dangerColorHoverOutline: rgba(211, 47, 47, 0.3);
 
 .default{
     background-color: #E0E0E0;
@@ -55,9 +55,15 @@ $dangerColorHoverOutline: rgba(211, 47, 47, 0.1);
 
     &:hover{
         background-color: #AEAEAE;
+        &.shadow{
+            box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+        }
     }
     &:focus{
         background-color: #AEAEAE;
+        &.shadow{
+            box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+        }
     }
 }
 
