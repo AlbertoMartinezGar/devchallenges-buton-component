@@ -26,7 +26,7 @@ const EnabledSection = () => {
             />
             </div>
         </div>
-        <div className='row mb-3'>
+        <div className='row'>
             <div className='col-6 d-flex justify-content-center'>
             <ButtonComponent 
                 text={'Endabled'} 

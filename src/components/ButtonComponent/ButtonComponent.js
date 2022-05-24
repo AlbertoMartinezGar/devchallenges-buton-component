@@ -10,7 +10,7 @@ const ButtonComponent = ({
   icon, 
   iconDirection = 'right',
   isEnabled,
-  shadow = true
+  shadow
 }) => {
   return (
     <button className={`
@@ -18,6 +18,7 @@ const ButtonComponent = ({
         ${type ? type : 'default'}
         ${color ? color : 'default'}
         ${size ? size : 'md'}
+        ${shadow && shadow === true ? 'shadow' : ''}
     `} disabled={isEnabled}>
         {
           icon ? (

@@ -1,5 +1,5 @@
 import './App.scss';
-import { ColorsSection, DefaultSection, EnabledSection, IconsSection, SizesSection } from './components';
+import { ColorsSection, DefaultSection, EnabledSection, IconsSection, SizesSection, ShadowsSection } from './components';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <SizesSection />
       <IconsSection />
       <EnabledSection />
+      <ShadowsSection />
     </div>
     
   );
