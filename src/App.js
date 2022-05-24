@@ -1,5 +1,5 @@
 import './App.scss';
-import { ColorsSection, DefaultSection, EnabledSection, IconsSection, SizesSection, ShadowsSection } from './components';
+import { ColorsSection, DefaultSection, EnabledSection, IconsSection, SizesSection, ShadowsSection, Footer } from './components';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <IconsSection />
       <EnabledSection />
       <ShadowsSection />
+      <Footer />
     </div>
     
   );
