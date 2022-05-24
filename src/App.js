@@ -133,6 +133,31 @@ function App() {
         </div>
       </div>
 
+      <div className='row mt-5'>
+        <h1>Icons</h1>
+        <hr />
+        <div className='col-6 d-flex justify-content-center'>
+          <ButtonComponent 
+            text={'Icon'} 
+            type={'default'}
+            color={'primary'}
+            size={'lg'}
+            icon={'pending'}
+            iconDirection={'right'}
+          />
+        </div>
+        <div className='col-6 d-flex justify-content-center'>
+          <ButtonComponent 
+            text={'Icon'} 
+            type={'default'}
+            color={'primary'}
+            size={'lg'}
+            icon={'pending'}
+            iconDirection={'left'}
+          />
+        </div>
+      </div>
+
     </div>
     
   );
